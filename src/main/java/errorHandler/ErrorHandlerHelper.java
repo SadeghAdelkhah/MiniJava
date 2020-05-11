@@ -4,9 +4,9 @@ package errorHandler;
  * Created by Alireza on 6/28/2015.
  */
 public final class ErrorHandlerHelper {
-    public static boolean hasError;
+    public static boolean hasError = false;
     private ErrorHandlerHelper() {
-        this.hasError = false;
+        //TODO
     }
     public static void printError(String msg) {
         hasError = true;
