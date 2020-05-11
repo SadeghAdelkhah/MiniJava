@@ -3,7 +3,7 @@ package errorHandler;
 /**
  * Created by Alireza on 6/28/2015.
  */
-public class ErrorHandlerHelper {
+public final class ErrorHandlerHelper {
     public static boolean hasError;
     private ErrorHandlerHelper() {
         this.hasError = false;
