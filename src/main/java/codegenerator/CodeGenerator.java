@@ -301,7 +301,7 @@ public class CodeGenerator {
 
     }
 
-    public void SubOrAdd(Operation op) {
+    public void subOrAdd(Operation op) {
         Address temp = new Address(memory.getTemp(), VarType.Int);
         Address s2 = ss.pop();
         Address s1 = ss.pop();
@@ -319,11 +319,11 @@ public class CodeGenerator {
         ss.push(temp);
     }
     public void add() {
-        SubOrAdd(Operation.ADD);
+        subOrAdd(Operation.ADD);
     }
 
     public void sub() {
-        SubOrAdd(Operation.SUB);
+        subOrAdd(Operation.SUB);
     }
 
     public void mult() {
